@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce - Laptops</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title"><img src="img1.jpg" alt="GoodyNoni Logo" width="150px" height="150px"></div>
+        <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+    <div class="hero">
+        <h1>Shop Laptops</h1>
+        <p>Find the best laptops for your needs at unbeatable prices!</p>
+    </div>
+
+    <div cla <div class="laptop-gallery">
+        <h2>Our Laptops</h2>
+        <div class="sidebar">
+            <h3>Filter by Category</h3>
+            <ul>
+                <li><a href="#" onclick="filterLaptops('all')">All</a></li>
+                <li><a href="#" onclick="filterLaptops('gaming')">Gaming</a></li>
+                <li><a href="#" onclick="filterLaptops('business')">Business</a></li>
+                <li><a href="#" onclick="filterLaptops('student')">Student</a></li>
+                <li><a href="#" onclick="filterLaptops('ultrabook')">Ultrabook</a></li>
+            </ul>
+        </div>
+        <div class="laptop-grid">
+            <div class="laptop-item gaming">
+                <img src="dell.webp" alt="Laptop 1">
+                <h3>Dell Latitude 5320 Intel Core i7-1185G7 3.0GHz 16GB RAM 256GB SSD Windows 11 Pro</h3>
+                <p>High-performance laptop for gaming and professional use.</p>
+                <p>Price: #620,000</p>
+            </div>
+            <div class="laptop-item business">
+                <img src="dell1.webp" alt="Laptop 2">
+                <h3>DELL LATITUDE 3520 15" FHD I5-1135G7 512GB SSD 16GB W11P WiFi6</h3>
+                <p>Lightweight and portable laptop for everyday tasks.</p>
+                <p>Price: #550,000</p>
+            </div>
+            <div class="laptop-item creative">
+                <img src="hp.webp" alt="Laptop 3">
+                <h3>HP EliteBook G8 i7-1185G7 3.00GHz 16GB RAM 512GB SSD Win 10 Pro</h3>
+                <p>Powerful laptop with advanced graphics for creative professionals.</p>
+                <p>Price: #650,000</p>
+            </div>
+            <div class="laptop-item business">
+                <img src="hp1.webp" alt="Laptop 4">
+                <h3>HP EliteBook 840 G6 14" (256GB SSD, Intel Core i5 8th Gen., 1.60 GHz, 16GB)</h3>
+                <p>Budget-friendly laptop with reliable performance.</p>
+                <p>Price: #460,000</p>
+            </div>
+            <div class="laptop-item ultrabook">
+                <img src="lenovo.webp" alt="Laptop 5">
+                <h3>Lenovo LOQ 15.6" FHD 144Hz Gaming Notebook R7-7435HS 16GB RAM 512GB SSD RTX 4070</h3>
+                <p>Ultra-thin laptop with long battery life for on-the-go use.</p>
+                <p>Price: #1,200000</p>
+            </div>
+            <div class="laptop-item ultrabook">
+                <img src="lenovo1.webp" alt="Laptop 6">
+                <h3>New Lenovo slim 7 14IMH9 14" Core Ultra 7 3.8GHz 32GB RAM 1TB SSD OLED Warranty</h3>
+                <p>High-end laptop with top-of-the-line specifications.</p>
+                <p>Price: #1,500000</p>
+            </div>
+            <div class="laptop-item student">
+                <img src="hp2.webp" alt="Laptop 7">
+                <h3>HP Elitebook x360 1030 g3 i5 8th generation 8G 476G Notebook PC Hobby d13</h3>
+                <p>Convertible laptop with touch screen and stylus support.</p>
+                <p>Price: 650,000</p>
+            </div>
+            <div class="laptop-item business">
+                <img src="dell2.webp" alt="Laptop 8">
+                <h3>Dell Latitude 5320 Intel Core i7-1185G7 3.0GHz 16GB RAM 256GB SSD Windows 11 Pro</h3>
+                <p>Durable laptop designed for business and enterprise use.</p>
+                <p>Price: #530,000</p>
+            </div>
+            <div class="laptop-item student">
+                <img src="lenovo2.webp" alt="Laptop 9">
+                <h3>Lenovo ThinkPad X1 Yoga Gen 3 Laptop 14” Core i7 4.0GHz 8GB 512GB SSD Win 11 Pro</h3>
+                <p>Compact laptop with powerful performance for students.</p>
+                <p>Price: #450,000</p>
+            </div>
+            <div class="laptop-item gaming">
+                <img src="hp4.webp" alt="Laptop 10">
+                <h3>HP 840 G3 I5-6300U 2.40GHZ RAM 8GB SSD 256GB WIN11 WIFI+4G LAPTOP NOTEBOOK-</h3>
+                <p>Gaming laptop with high refresh rate display and RGB lighting.</p>
+                <p>Price: #260,000</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-item">
+                <img src="img1.jpg" alt="GoodyNoni Logo" width="100" height="100">
+                <p>GoodyNoni Limited is a leading company in innovative digital marketing and software development. We bring the world closer through technological advancement.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Ekechi.Goodluck.Ejimofor" target="_blank"><img src="fb.avif" alt="Facebook"></a>
+                    <a href="https://x.com/ekechiejim89855?s=21" target="_blank"><img src="tw.avif" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/ekechi.goodluck.ejimofor/#" target="_blank"><img src="ig.avif" alt="Instagram"></a>
+                    <a href="https://wa.me/message/LULVQRQFHHWTK1" target="_blank"><img src="wp.avif" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to stay updated on our latest news and offers.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 GoodyNoni Limited, All rights reserved. | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+<script src="ecommerce.js"></script>
+</html>

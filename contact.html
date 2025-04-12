@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GoodyNoni Limited</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title"><img src="img1.jpg" alt="GoodyNoni Logo" width="150px" height="150px"></div>
+        <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+    <div class="hero">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Get in touch with us.</p>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or would like to learn more about our services, please feel free to contact us.</p>
+            <ul>
+                <li><i class="fas fa-envelope"></i> Email: info@goodyoni.com</li>
+                <li><i class="fas fa-phone"></i> Phone: +234 7037202471</li>
+                <li><i class="fas fa-map-marker-alt"></i> Address: 123 Tech Street, Kubwa FCT Abuja, Nigeria</li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="map-section">
+        <h2>Our Location</h2>
+        <div id="map"><h4> 123 Tech Street, Off Nepa Road Phase 4 Kubwa, Abuja 901101, Federal Capital Territory</h4>
+            <p>call or visit us today for your maximum satisfaction </p>
+            <img src="engr2.jpg" alt="" width="370px" height="370px">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-item">
+                <img src="img1.jpg" alt="GoodyNoni Logo" width="100" height="100">
+                <p class="foot">GoodyNoni Limited is a leading company in innovative digital marketing and software development. We bring the world closer through technological advancement.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Ekechi.Goodluck.Ejimofor" target="_blank"><img src="fb.avif" alt="Facebook"></a>
+                    <a href="https://x.com/ekechiejim89855?s=21" target="_blank"><img src="tw.avif" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/ekechi.goodluck.ejimofor/#" target="_blank"><img src="ig.avif" alt="Instagram"></a>
+                    <a href="https://wa.me/message/LULVQRQFHHWTK1" target="_blank"><img src="wp.avif" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to stay updated on our latest news and offers.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 GoodyNoni Limited, All rights reserved. | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function initMap() {
+            var location = { lat: -25.344, lng: 131.036 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://www.google.com/search?client=opera&sca_esv=214c5f27b0d18acb&sxsrf=AHTn8zpakTlPoP9tl83WJyEZAmfbp1s3Ng:1742940488937&q=virtualmeans+logistics+abuja+address&ludocid=13467850853999681087&sa=X&ved=2ahUKEwiIw9Sln6aMAxVdQUEAHSTqHnAQ6BN6BAhCEAI</script>
+</body>
+</html>

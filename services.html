@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - GoodyNoni Limited</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title"><img src="img1.jpg" alt="GoodyNoni Logo" width="150px" height="150px"></div>
+        <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+    <div class="hero">
+        <h1>Our Services</h1>
+        <p>Discover the wide range of services we offer at GoodyNoni Limited</p>
+    </div>
+
+    <div class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="laptop.png" alt="Laptop Sales">
+                <h3>Laptop Sales</h3>
+                <p>We offer a wide range of laptops for all kinds of needs, from personal use to professional work. Our laptops come with the latest technology and features to ensure you get the best performance.</p>
+            </div>
+            <div class="service-item">
+                <img src="web.png" alt="Software Development">
+                <h3>Software Development</h3>
+                <p>Our team of experienced developers provides top-notch software development services. We create custom software solutions tailored to your business needs, ensuring efficiency and productivity.</p>
+            </div>
+            <div class="service-item">
+                <img src="artificial3.png" alt="Artificial Intelligence">
+                <h3>Artificial Intelligence</h3>
+                <p>We are at the forefront of AI technology, developing intelligent systems that enhance productivity and decision-making processes. Our AI solutions are designed to meet the unique needs of your business.</p>
+            </div>
+            <div class="service-item">
+                <img src="internet.PNG" alt="Internet of Things">
+                <h3>Internet of Things</h3>
+                <p>Our IoT solutions connect devices and systems, enabling seamless communication and automation. We help businesses leverage IoT technology to improve efficiency and drive innovation.</p>
+            </div>
+            <div class="service-item">
+                <img src="cyber.png" alt="Cybersecurity">
+                <h3>Cybersecurity</h3>
+                <p>We provide advanced cybersecurity solutions to protect your digital assets from cyber threats. Our services include risk assessment, threat detection, and incident response to ensure your business stays secure.</p>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-item">
+                <img src="img1.jpg" alt="GoodyNoni Logo" width="100" height="100">
+                <p class="foot">GoodyNoni Limited is a leading company in innovative digital marketing and software development. We bring the world closer through technological advancement.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Ekechi.Goodluck.Ejimofor" target="_blank"><img src="fb.avif" alt="Facebook"></a>
+                    <a href="https://x.com/ekechiejim89855?s=21" target="_blank"><img src="tw.avif" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/ekechi.goodluck.ejimofor/#" target="_blank"><img src="ig.avif" alt="Instagram"></a>
+                    <a href="https://wa.me/message/LULVQRQFHHWTK1" target="_blank"><img src="wp.avif" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to stay updated on our latest news and offers.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 GoodyNoni Limited, All rights reserved. | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function filterLaptops(category) {
+            var items = document.getElementsByClassName('laptop-item');
+            for (var i = 0; i < items.length; i++) {
+                if (category === 'all') {
+                    items[i].style.display = 'block';
+                } else {
+                    if (items[i].classList.contains(category)) {
+                        items[i].style.display = 'block';
+                    } else {
+                        items[i].style.display = 'none';
+                    }
+                }
+            }
+        }
+
+        // Show only the first four laptops initially
+        document.addEventListener('DOMContentLoaded', function() {
+            var items = document.getElementsByClassName('laptop-item');
+            for (var i = 0; i < items.length; i++) {
+                if (i < 4) {
+                    items[i].style.display = 'block';
+                } else {
+                    items[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
